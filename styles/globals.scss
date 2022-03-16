@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Petrona:wght@200;300;400;500;600;700;800&display=swap');
+:root {
+  // Background colors
+  // --main-bg-color: hsl(248, 100%, 4%);
+  --footer-bg: hsl(0, 0%, 100%);
+  // --box-bg: hsl(225, 13%, 19%);
+  // Text Colors
+  --gray-text-color: hsl(0, 0%, 67%);
+  --blue-text-color: hsl(0, 0%, 28%);
+  --main-text-color: #113B11;
+  --dark-text-color: #000000
+  --text-gradient: linear-gradient(271.21deg, #9997FF -14.13%, #FFB4FC 118.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  --light-text-color: hsl(0, 0%, 89%);
+  // Font variations
+  --fancy-font-family: 'Petrona', sans-serif;
+  --main-font-family: 'DM Sans', sans-serif;
+  // Font Sizes
+  --small-heading-size: 3.6rem;
+  --main-heading-size: 6.0rem;
+  --sub-heading-size: 2.4rem;
+  --main-text-size: 1.8rem;
+  --small-text-size: 16px;
+  // Weight Variations
+  --text-bold: 800;
+  --text-semi-bold: 700;
+  --text-medium: 500;
+  --text-regular: 400;
+  // Others
+  --main-max-width: 1300px;
+  --wide-max-width: 1400px;
+  --festures-max-width: 1000px;
+  --discord-btn-color: linear-gradient(0deg, hsl(226, 39%, 27%), hsl(226, 39%, 27%)), hsl(227, 58%, 65%);
+  --main-btn-color: hsl(227, 58%, 65%);
+  --disabled-btn-color: hsl(0, 0%, 50%, 1);
+  --main-green-color: hsl(123, 100%, 74%);
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  @media only screen and (max-width: 768px) {
+    font-size: 50%;
+  }
+}
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  background-color: var(--main-bg-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#__next {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-padding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 3.5rem 0rem 3.5rem;
+}

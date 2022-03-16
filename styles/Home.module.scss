@@ -1,0 +1,68 @@
+.firstSectionCircle {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: -20;
+  background: rgba(207, 238, 206, 0.6);
+  background-size: cover;
+  @media only screen and (max-width: 1440px) {
+    min-height: 120vh;
+  }
+}
+
+.firstSectionContainer {
+  margin-top: 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media only screen and (max-width: 940px) {
+    align-items: flex-start;
+  }
+}
+
+.secondSectionContainer {
+  max-width: 100%;
+  width: 100%;
+  margin-top: 19.5rem;
+}
+
+.bigSubHeadingAlign {
+  @media only screen and (min-width: 940px) {
+    text-align: center;
+  }
+}
+
+.thirdSectionContainer {
+  max-width: var(--festures-max-width);
+  width: 100%;
+  min-height: 100rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+  @media only screen and (min-width: 940px) {
+    margin-top: 8.5rem;
+    text-align: center;
+    align-items: center;
+  }
+  @media only screen and (min-width: 1440px) {
+    margin-top: 0rem;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+.spaceBetweenVertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.securitySectionContainer {
+  margin-top: 15.5rem;
+  max-width: var(--main-max-width);
+  width: 100%;
+}

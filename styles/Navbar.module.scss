@@ -1,0 +1,26 @@
+.container {
+  max-width: var(--main-max-width);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 22rem;
+  @media only screen and (max-width: 940px) {
+    width: 15rem;
+  }
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  align-items: center;
+  justify-items: center;
+  color: #0000;
+  grid-gap: 5.5rem;
+  @media only screen and (max-width: 940px) {
+    display: none;
+  }
+}
