@@ -3,7 +3,7 @@ import styles from '@/styles/Home.module.scss';
 import components from '@/styles/Components.module.scss';
 import dashboardLocus from '@/images/screenshots/locusDashboard.png';
 import thirdSectionHeader from '@/images/upcomingFeaturesDesign.svg';
-
+import thirdSectionHeaderMobile from '@/images/upcomingFeatureMobile.svg';
 import {
   FirstSectionCircle,
   Body,
@@ -134,7 +134,8 @@ const UpcomingFeatures = [
 export const ForthSection = function ForthSection() {
   return (
     <section id="upcomingFeatures" className={styles.thirdSectionContainer}>
-      <img src={thirdSectionHeader.src} alt="logo" className=" absolute -z-10 w-[1148px] right-0 " />
+      <img src={thirdSectionHeader.src} alt="logo" className=" absolute hidden -z-10 w-[1148px] right-0 md:block" />
+      <img src={thirdSectionHeaderMobile.src} alt="logo" className=" black absolute -z-10 h-[800px] w-[2148px] right-0 md:w-[1148px] md:hidden " />
       <h1
         className={` mt-28  lg:mt-64 lg:mb-0 ${components.gradientHeading}`}
       >

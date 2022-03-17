@@ -3,6 +3,7 @@ import React from 'react';
 import { DefaultHead } from '@/layouts/Head';
 import { Navbar } from '@/layouts/Navbar';
 import header from '@/images/header.svg';
+import thirdSectionHeaderMobile from '@/images/upcomingFeatureMobile.svg';
 import {
   FirstSection,
   SecondSection,
@@ -17,7 +18,8 @@ const Home: NextPage = function HomePage() {
     <>
       <DefaultHead />
       <div className="main-container">
-        <img src={header.src} alt="logo" className=" absolute -z-10 top-0 " />
+        <img src={header.src} alt="logo" className=" hidden absolute -z-10 top-0 md:block " />
+        <img src={thirdSectionHeaderMobile.src} alt="logo" className=" black absolute -z-10 h-[600px] w-[2148px] right-0 md:w-[1148px] md:hidden " />
         <Navbar />
         <FirstSection />
         <SecondSection />
