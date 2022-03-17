@@ -18,17 +18,10 @@ export const FirstSection = function FirstSection() {
       <FirstSectionCircle />
       <Body>
         <div className={styles.firstSectionContainer}>
-          <div className="flex flex-row ">
+          <div className="flex flex-col lg:flex-row ">
             <h1 style={{ marginTop: '1rem', marginBottom: '0rem', marginRight: '1rem' }} className={`+ ${components.gradientHeading}`}>Revolutionary </h1>
             <h1
-              style={{
-                marginTop: '0.5rem',
-                marginBottom: '0rem',
-                background: '#B3EFB1',
-                padding: '5px 20px 5px 20px',
-                borderRadius: '20px',
-              }}
-              className={components.gradientHeading}
+              className={` rounded-[20px] mt-0 mb-0 px-0 py-0 lg:mt-2 lg:px-5 lg:py-2 ${components.highlightHeading}`}
             >
               community building
             </h1>
@@ -86,11 +79,7 @@ export const ThirdSection = function ThirdSection() {
   return (
     <section id="features" className={styles.thirdSectionContainer}>
       <h1
-        className={components.gradientHeading}
-        style={{
-          marginTop: '17rem',
-          marginBottom: '0rem',
-        }}
+        className={` mt-28  lg:mt-64 lg:mb-0 ${components.gradientHeading}`}
       >
         Why DAOs need Locus?
       </h1>
@@ -105,7 +94,7 @@ export const ThirdSection = function ThirdSection() {
       <FeaturesGrid>
         {Features.map((feature, index) => (
           <div key={index} className={components.feature}>
-            <p style={{ marginTop: '2.2rem', textAlign: 'left' }} className={components.bigBoldText}>
+            <p style={{ textAlign: 'left' }} className={` mt-5 lg:mt-9 ${components.bigBoldText}`}>
               {feature.title}
             </p>
             <p style={{ marginTop: '2.2rem', textAlign: 'left', maxWidth: '270px' }} className={components.smallSubHeading}>
@@ -147,11 +136,7 @@ export const ForthSection = function ForthSection() {
     <section id="upcomingFeatures" className={styles.thirdSectionContainer}>
       <img src={thirdSectionHeader.src} alt="logo" className=" absolute -z-10 w-[1148px] right-0 " />
       <h1
-        className={components.gradientHeading}
-        style={{
-          marginTop: '17rem',
-          marginBottom: '0rem',
-        }}
+        className={` mt-28  lg:mt-64 lg:mb-0 ${components.gradientHeading}`}
       >
         Big boy moves in the pipeline
       </h1>
@@ -181,11 +166,10 @@ export const ForthSection = function ForthSection() {
 
 export const ContactSection = function ContactSection() {
   return (
-    <section id="chatWithUs" className=" flex flex-col items-center ">
+    <section id="chatWithUs" className="flex flex-col lg:items-center ">
       <h1
-        className={components.gradientHeading}
+        className={` mt-28 lg:mt-64 ${components.gradientHeading}`}
         style={{
-          marginTop: '17rem',
           marginBottom: '0rem',
         }}
       >

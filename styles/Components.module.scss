@@ -73,6 +73,10 @@
   color: var(--main-text-color);
   background-clip: text;
   -webkit-background-clip: text;
+  @media only screen and (max-width: 940px) {
+    align-items: center;
+    font-size: var(--small-heading-size);
+  }
 }
 
 .gradientText {
@@ -80,6 +84,21 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.highlightHeading {
+  font-family: var(--fancy-font-family);
+  font-weight: var(--text-semi-bold);
+  font-size: var(--main-heading-size);
+  color: var(--main-text-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  background: #B3EFB1;
+  @media only screen and (max-width: 940px) {
+    align-items: center;
+    font-size: var(--small-heading-size);
+    background: inherit
+  }
 }
 
 .bigHeading {
@@ -116,6 +135,7 @@
   @media only screen and (max-width: 768px) {
     grid-template-columns: 1fr;
     grid-row-gap: 2rem;
+    margin-bottom: 10vh;
   }
   @media only screen and (min-width: 940px) {
     justify-items: center;
@@ -129,6 +149,11 @@
   text-align: left;
   width: 100%;
   margin-left: 35%;
+  @media only screen and (max-width: 940px) {
+    justify-items: center;
+    margin-left: 0%;
+    margin-bottom: 0vh;
+  }
 }
 
 .darkText {

@@ -16,19 +16,19 @@ const Home: NextPage = function HomePage() {
   return (
     <>
       <DefaultHead />
-      <div className="main-padding">
+      <div className="main-container">
         <img src={header.src} alt="logo" className=" absolute -z-10 top-0 " />
         <Navbar />
         <FirstSection />
-      </div>
-      <SecondSection />
-      <div className="main-padding">
+        <SecondSection />
         <ThirdSection />
       </div>
-      <div className="main-padding" style={{ background: 'rgba(207, 238, 206, 0.6)' }}>
+      <div className="main-container" style={{ background: 'rgba(207, 238, 206, 0.6)' }}>
         <ForthSection />
       </div>
-      <ContactSection />
+      <div className="main-container">
+        <ContactSection />
+      </div>
       <Footer />
     </>
   );

@@ -42,14 +42,14 @@ export const Footer = function Footer({ fixed }: {
     >
       <div className={styles.footerFlex}>
         <VerticalSpaceBetween>
-          <img alt="Logo" src={logo.src} />
+          <img alt="Logo" src={logo.src} className="hidden md:block " />
           <p
             className={components.darkText}
             style={{ maxWidth: '48rem', marginTop: '4rem' }}
           >
             Built & backed by the best
           </p>
-          <div className="flex flex-row items-center mt-2">
+          <div className="flex flex-row items-center mt-2 mb-14 md:mb-0 ">
             <img alt="Logo" src={superteam.src} className=" rounded-full" />
             <a
               className={components.mainBoldText}
@@ -63,7 +63,7 @@ export const Footer = function Footer({ fixed }: {
           </div>
         </VerticalSpaceBetween>
         {Object.keys(Links).map((key, index) => (
-          <div key={index} style={{ paddingTop: '1.25rem' }}>
+          <div key={index} style={{ paddingTop: '1.25rem' }} className="mb-8 lg:mb-0">
             <VerticalSpaceBetween>
               <h3 className={components.mainBoldText}>{key}</h3>
               <div
