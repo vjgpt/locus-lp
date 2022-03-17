@@ -7,9 +7,13 @@
   z-index: -20;
   background: rgba(207, 238, 206, 0.6);
   background-size: cover;
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 880px) {
+    min-height: 80vh;
+  }
+  @media only screen and (width: 1440px) {
     min-height: 120vh;
   }
+
 }
 
 .firstSectionContainer {
