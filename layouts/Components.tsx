@@ -22,7 +22,7 @@ export const DefaultLink = function DefaultLink(props: DefaultLinkProps) {
     </Link>
   );
 };
-
+// Discord Icon
 export const AddToDiscord = function AddToDiscord({
   overrideHeight,
   overrideWidth,
