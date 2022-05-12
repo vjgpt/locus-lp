@@ -4,6 +4,15 @@ import components from '@/styles/Components.module.scss';
 import dashboardLocus from '@/images/screenshots/locusDashboard.png';
 import thirdSectionHeader from '@/images/upcomingFeaturesDesign.svg';
 import thirdSectionHeaderMobile from '@/images/upcomingFeatureMobile.svg';
+import taskFeatureIcon from '@/images/icons/features/task.svg';
+import bountyIcon from '@/images/icons/features/bounty.svg';
+import paymentIcon from '@/images/icons/features/payments.svg';
+import reputationIcon from '@/images/icons/features/reputation.svg';
+import analyticsIcon from '@/images/icons/pipeline/analytics.svg';
+import decentralised from '@/images/icons/pipeline/decentralised.svg';
+import pow from '@/images/icons/pipeline/pow.svg';
+import identity from '@/images/icons/pipeline/identity.svg';
+
 import {
   FirstSectionCircle,
   Body,
@@ -57,21 +66,25 @@ const Features = [
     description: `
       Create, track and review tasks for community projects.
     `,
+    icon: taskFeatureIcon.src,
   }, {
     title: 'Bounty system',
     description: `
       Manage and track bounties, and also share it externally.
     `,
+    icon: bountyIcon.src,
   }, {
     title: 'Easy integrated payment',
     description: `
       Paying the contributors has never been more easy.
     `,
+    icon: paymentIcon.src,
   }, {
     title: 'Reputation system',
     description: `
       Manage reputation/experience points and leaderboards.
     `,
+    icon: reputationIcon.src,
   },
 ];
 
@@ -93,13 +106,16 @@ export const ThirdSection = function ThirdSection() {
       </p>
       <FeaturesGrid>
         {Features.map((feature, index) => (
-          <div key={index} className={components.feature}>
-            <p style={{ textAlign: 'left' }} className={` mt-5 lg:mt-9 ${components.bigBoldText}`}>
-              {feature.title}
-            </p>
-            <p style={{ marginTop: '2.2rem', textAlign: 'left', maxWidth: '270px' }} className={components.smallSubHeading}>
-              {feature.description}
-            </p>
+          <div key={index} className="flex flex-row">
+            <img src={feature.icon} alt="" className="px-4 w-24 h-24 mt-8 sm:w-20 sm:h-20 md:w-32 md:h-32" />
+            <div key={index} className={components.feature}>
+              <p style={{ textAlign: 'left' }} className={` mt-5 lg:mt-9 ${components.bigBoldText}`}>
+                {feature.title}
+              </p>
+              <p style={{ marginTop: '1rem', textAlign: 'left', maxWidth: '270px' }} className={components.smallSubHeading}>
+                {feature.description}
+              </p>
+            </div>
           </div>
         ))}
       </FeaturesGrid>
@@ -113,21 +129,25 @@ const UpcomingFeatures = [
     description: `
       We will be making locus a decentralized platform
     `,
+    icon: decentralised.src,
   }, {
     title: 'On-chain Proof of Work',
     description: `
       Each and every user's contribution will be on-chain
     `,
+    icon: pow.src,
   }, {
     title: 'Identity management',
     description: `
       Every user will have a unique identity across the ecosystem
     `,
+    icon: identity.src,
   }, {
-    title: 'Commmunity Engagement Analytics',
+    title: 'Engagement Analytics',
     description: `
       Wouldn't you like to know how your community is doing?
     `,
+    icon: analyticsIcon.src,
   },
 ];
 
@@ -151,13 +171,16 @@ export const ForthSection = function ForthSection() {
       </p>
       <FeaturesGrid>
         {UpcomingFeatures.map((feature, index) => (
-          <div key={index} className={components.feature}>
-            <p style={{ marginTop: '2.2rem', textAlign: 'left' }} className={components.bigBlackText}>
-              {feature.title}
-            </p>
-            <p style={{ marginTop: '2.2rem', textAlign: 'left', maxWidth: '270px' }} className={components.smallSubHeading}>
-              {feature.description}
-            </p>
+          <div key={index} className="flex flex-row">
+            <img src={feature.icon} alt="" className="px-4 w-24 h-24 mt-8 sm:w-20 sm:h-20 md:w-32 md:h-32" />
+            <div key={index} className={components.feature}>
+              <p style={{ marginTop: '2.2rem', textAlign: 'left' }} className={components.bigBlackText}>
+                {feature.title}
+              </p>
+              <p style={{ marginTop: '1rem', textAlign: 'left', maxWidth: '270px' }} className={components.smallSubHeading}>
+                {feature.description}
+              </p>
+            </div>
           </div>
         ))}
       </FeaturesGrid>
