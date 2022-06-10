@@ -63,7 +63,7 @@ export const CheckoutTheApp = function CheckoutTheApp({
       }}
       href={process.env.NEXT_PUBLIC_APP_LINK ? process.env.NEXT_PUBLIC_APP_LINK : '/earlyaccess'}
     >
-      <span>{process.env.NEXT_PUBLIC_APP_LINK ? 'Checkout the app' : 'Add to Discord'}</span>
+      <span>{process.env.NEXT_PUBLIC_APP_LINK ? 'Checkout the app' : 'Get early access'}</span>
     </a>
   );
 };
